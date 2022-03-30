@@ -9,13 +9,11 @@
     <H1>Vice Versa</H1>
     <h2>{{greeting}}</h2>
 
-    <form>
+    <form action="{% url 'reverse' %}">
         <label for="usertext">Type Some Text:</label>
-        <textarea id="usertext" name="usertext" rows="5" cols="100%"/>
-        <br>
+        <textarea id="usertext" name="usertext" rows="5" cols="100%"></textarea>
         <br>
         <input type="submit" value="Reverse!">
-        <p>Something</p>
     </form>
 </body>
 </html>
